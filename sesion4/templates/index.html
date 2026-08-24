@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAM</title>
+</head>
+<body>
+   <form action="" method="post">
+     <label for="txtGrade">Nota:</label>
+    <input type="text" name="txtGrade">
+    <button type="submit">Evaluar</button>
+   </form>
+   {% if answer %}
+      <p> {{answer}} </p>
+   {% endif %}
+</body>
+</html>
