@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAM</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>UAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-   <form action="" method="post">
-     <label for="txtGrade">Nota:</label>
-    <input type="text" name="txtGrade">
-    <button type="submit">Evaluar</button>
+
+<div class = "container mt-5">
+   <form action="" method="post" class="bg-info">
+     <label for="txtGrade" class="label-control">Nota:</label>
+    <input type="text" name="txtGrade" id="txtGrade" 
+    class="form-control">
+    <button type="submit" class="btn btn-outline-success
+    mt-2">Evaluar</button>
    </form>
    {% if answer %}
       <p> {{answer}} </p>
